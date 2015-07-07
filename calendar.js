@@ -176,37 +176,6 @@ function makeApiCall() {
         p.style.fontSize = 'small';
       
         console.log(resp.items[i].start.date);
-        //li.appendChild(document.createTextNode(resp.items[i].start.date));
-       /* 
-        var eventSummary = (resp.items[i].summary);
-        var dateTime = (resp.items[i].start.dateTime || resp.items[i].start.date);
-        var str = resp.items[i].start.dateTime;
-        var date = new Date(str);
-        var timestamp = Number(date);
-        if(typeof dateTime === 'undefined') {
-          console.log(i, resp.items[i]);
-        }
-        var d = new Date();
-
-        //compare unix timestamps
-        if (calculateUnixTimestamp(dateTime) >= calculateUnixTimestamp(d)) {
-          var date = dateTime.split('T')[0];
-          li.appendChild(document.createTextNode(eventSummary));
-   
-          
-          document.getElementById('events').appendChild(li);
-          var br = document.createElement('br');
-          li.appendChild(br);
-
-          //Reverse format of the date from yyyy-mm-dd to dd-mm-yyyy to make  more readable
-          date = date.split('-').reverse().join(" / ");
-          li.appendChild(document.createTextNode(date));
-
-          li.setAttribute('id', 'list-data');
-          document.getElementById('events').appendChild(li);
-        }
-
-          */
       }
     });
   });
