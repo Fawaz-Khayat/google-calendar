@@ -20,11 +20,11 @@ $calendarId = 'ed.prince5769@gmail.com';
 $params = array(
     'singleEvents' => true, //REQUIRED
     'orderBy' => 'startTime',
-    'timeMin' => date(DateTime::ATOM),
-    'maxResults' => 7  
+    'timeMin' => date(DateTime::ATOM)  
 );
 
 $events = $cal->events->listEvents($calendarId, $params); 
+//print_r(json_encode($events->getItems()));
 $calTimeZone = $events->timeZone; //GET THE TZ OF THE CALENDAR
 
 date_default_timezone_set($calTimeZone);
@@ -35,9 +35,9 @@ $innerArray = array();
 foreach ($events->getItems() as $event) {  
     
     if (isset ($event->start->date)) { 
-        $array = array("title" => $event->summary, "start" => $event->start->date);
+        $array = array("title" => $event->summary, "color" => "red", "description" => $event->description, "start" => $event->start->date, "end" => $event->end->date);
     } else {
-        $array = array("title" => $event->summary, "start" => $event->start->dateTime); 
+        $array = array("title" => $event->summary, "color" => "red", "description" => $event->description,  "start" => $event->start->dateTime, "end" => $event->end->dateTime); 
     }
     array_push($outerArray, $array);
 }
