@@ -35,3 +35,16 @@
   background-color: #E3E8F0;
 }
 
+#calendar {
+  width: 80%;
+}
+
+#modal {
+  position: absolute;
+  width: 200px;
+  border-top: solid 2px #4FC2F0;
+  display: none;
+  box-shadow: 2px 4px 10px #AEAEAE;
+  z-index: 10;
+  background-color: white;
+}
