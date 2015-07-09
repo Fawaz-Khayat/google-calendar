@@ -9,7 +9,7 @@
 //INCLUDE THE GOOGLE API PHP CLIENT LIBRARY FOUND HERE
 //https://github.com/google/google-api-php-client
 //DOWNLOAD IT AND PUT IT ON YOUR WEBSERVER IN THE ROOT FOLDER.
-require '/var/www/html/calendar/google-api-php-client/src/Google/autoload.php'; 
+require '/var/www/html/google-calendar-list/google-api-php-client/src/Google/autoload.php'; 
  
 
 
@@ -111,5 +111,4 @@ foreach ($events->getItems() as $event) {
     //<?php
     }
     print_r(json_encode($outerArray)); 
-    exit(0);
 ?>
