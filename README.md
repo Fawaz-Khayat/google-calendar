@@ -1,12 +1,15 @@
-# google-calendar-list
-Web application in JavaScript using Google Calendar API to list upcoming events
+# edprince-website
+My personal website
 
-##Documentation
-This project relies on a Google Service Account. This is used so the user requires no authorization to view the events on the calendar.
-The calendar needs to be made public, and the check box labelled 'Share only my free/busy information (Hide details)' must be <b>unchecked</b>
+##Areas on which to focus
+1. Music
+2. Computing
 
-To change the calendar that displays on the page. Go to the function <b>makeApiCall()</b> and find 'calendarId'. Then add a new calendar Id of a calendar
-you wish to display.
+###Music
+This section should have links to all of my music online, plus some guides.
 
-To modify the query for the events being transferred, head over to the Google Calendar API, and look under 'event list'. These are the potential modifications to the query for data.
+###Computing
+The majority of my computing work is stored on GitHub already, and so the site only needs to contain links to projects or just to my main GitHub page. There may also be some guides on here as well.
 
+###Resources
+font - link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'

@@ -1,0 +1,37 @@
+
+.day {
+  color: #AEAEAE;
+  font-size: small;
+}
+
+.event-container {
+  //background: -webkit-linear-gradient(#F9F9F9, #ECECEC);
+  //border: solid 1px #AEAEAE;
+  //border-radius: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  width: 30%;
+  min-width: 200px;
+  box-sizing: border-box;
+  padding: 0.3em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.event-container a:link {
+  text-decoration: none;
+  color: black;
+}
+
+.event-container a:visited {
+  color: black;
+}
+
+.event-container:hover {
+  box-sizing: border-box;
+  cursor: pointer;
+  //background: -webkit-linear-gradient(#F9F9F9, #E3E8F0);
+  background-color: #E3E8F0;
+}
+
