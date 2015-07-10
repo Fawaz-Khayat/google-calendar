@@ -23,7 +23,7 @@ Logged into your Google Account, go to the [Google Developers Console](https://c
 Everything that is needed for the fullcalendar is in this repository to and will work on downloading, however you can pick it up independently at the fullcalendar [website](http://fullcalendar.io/).
 
 ###PHP JSON extension
-Look for the install instructions for whatever OS the server is running
+Look for the install instructions for whichever OS the server is running.
 
 ###Google API php client
 If you have cloned the repository, then this will be included (make sure to modify the pathway to this file in the <i>calendar.php</i> file to wherever it is being stored on your server. If you want to install independently, head over [here](https://developers.google.com/api-client-library/php/) and read the installation instructions.
@@ -40,3 +40,10 @@ If you have cloned the repository, then this will be included (make sure to modi
 ###Link to your calendar
 You need to add your API key into the calendar.php file at the top under the `setDeveloperKey`
 Go into the calendar.php file, and find where the calendarId variable is being set. Enter your calendarId here.
+
+##Styling the calendar
+The majority of the styling for this application is all done in <i>calendar.css</i>. There are however some styles that have to applied through javascript in <i>jq-fc.js</i>. To find the identifiers of any element, right click and inspect element. This should open developer tools and show the attributes of the element you have selected. Then go to the css file and modify accordingly.
+
+The list view contains event information for upcoming events. The number of events displayed is, by default, set to 3, but can be modified in <i>jq-fc.js</i>.
+
+By default, the list view does not display descriptions for the events, but can display them if description code in uncommented in <i>jq-fc.js</i>
