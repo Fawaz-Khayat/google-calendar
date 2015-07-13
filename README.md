@@ -50,12 +50,10 @@ By default, the list view does not display descriptions for the events, but can 
 
 ##Adding more calendars to the feed
 In order to display multiple calendars (within your personal Google account), you must add other calendars as feeds. Create a new php file with a sensible name for the calendar feed, then add the following to the file:
-  <code>
+
+  ```php
   <?php
-  
     $calendarId = 'INSERT YOUR CALENDAR ID';
-    
     require 'pathway/to/common.php';
-    
   ?>
-  </code>
+
