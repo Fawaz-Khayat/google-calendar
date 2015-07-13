@@ -1,6 +1,11 @@
 #Google Calendar
 
-##Installation
+ - [Installation](https://github.com/edprince/google-calendar/edit/master/README.md#installation)
+ - [Usage](https://github.com/edprince/google-calendar/edit/master/README.md#usage)
+ - [Styling](https://github.com/edprince/google-calendar/edit/master/README.md#styling)
+ - [Adding more calendars](https://github.com/edprince/google-calendar/edit/master/README.md#add)
+
+##<a name="installation"></a>Installation
 ###Requirements
  * A <b>Public</b> Google Calendar
  * Your calendarId
@@ -28,7 +33,7 @@ Look for the install instructions for whichever OS the server is running.
 ###Google API php client
 If you have cloned the repository, then this will be included (make sure to modify the pathway to this file in the <i>calendar.php</i> file to wherever it is being stored on your server. If you want to install independently, head over [here](https://developers.google.com/api-client-library/php/) and read the installation instructions.
 
-##Using the application
+##<a name="usage"></a>Using the application
 ###Purpose of each file
 | File | Description |
 |------|-------------|
@@ -41,14 +46,14 @@ If you have cloned the repository, then this will be included (make sure to modi
 You need to add your API key into the calendar.php file at the top under the `setDeveloperKey`
 Go into the calendar.php file, and find where the calendarId variable is being set. Enter your calendarId here.
 
-##Styling the calendar
+##<a name="style"></a>Styling the calendar
 The majority of the styling for this application is all done in <i>calendar.css</i>. There are however some styles that have to applied through javascript in <i>jq-fc.js</i>. To find the identifiers of any element, right click and inspect element. This should open developer tools and show the attributes of the element you have selected. Then go to the css file and modify accordingly.
 
 The list view contains event information for upcoming events. The number of events displayed is, by default, set to 3, but can be modified in <i>jq-fc.js</i>.
 
 By default, the list view does not display descriptions for the events, but can display them if description code in uncommented in <i>jq-fc.js</i>
 
-##Adding more calendars to the feed
+##<a name="add"></a>Adding more calendars to the feed
 In order to display multiple calendars (within your personal Google account), you must add other calendars as feeds. Create a new php file with a sensible name for the calendar feed, then add the following to the file:
 
   ```php
