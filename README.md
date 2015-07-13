@@ -56,4 +56,18 @@ In order to display multiple calendars (within your personal Google account), yo
     $calendarId = 'INSERT YOUR CALENDAR ID';
     require 'pathway/to/common.php';
   ?>
+  ```
+Now go to the <i>jq-fc.js</i> file and add the new file you have created as an event source. The existing event source(s) should look something like this: 
 
+```javascript
+eventSource: [
+  {
+    url: 'events.php'
+  },
+  {
+    url 'new-feed.php',
+    color: 'red' //OPTIONAL. This adds a colour to the events to distinguish which feed it is from
+  }
+]
+```
+This should then add a new calendar feed to your calendar.
