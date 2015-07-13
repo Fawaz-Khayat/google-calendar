@@ -71,7 +71,7 @@ eventSource: [
   },
   {
     url 'new-feed.php',
-    color: 'red' //OPTIONAL. This adds a colour to the events to distinguish which feed it is from
+    color: 'red' //OPTIONAL. This adds a colour to the events to distinguish from which feed it is
   }
 ]
 ```
