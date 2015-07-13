@@ -54,6 +54,7 @@ The list view contains event information for upcoming events. The number of even
 By default, the list view does not display descriptions for the events, but can display them if description code in uncommented in <i>jq-fc.js</i>
 
 ##<a name="add"></a>Adding more calendars to the feed
+This feature requires you to create a new calendar for other categories of events. Not separate from your primary calendar, but a secondary calendar. Then, when you create an event, use the drop down box to select the calendar on which to post the event.
 In order to display multiple calendars (within your personal Google account), you must add other calendars as feeds. Create a new php file with a sensible name for the calendar feed, then add the following to the file:
 
   ```php
