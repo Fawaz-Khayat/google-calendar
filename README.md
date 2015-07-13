@@ -76,10 +76,10 @@ eventSource: [
   }
 ]
 ```
+This should then add a new calendar feed to your calendar.
 ##Errors
 If you are getting errors when using this project, here are a few things to check.
  - Check that everything in the head of the html is linked to the correct place (bearing in mind the location of each file).
  - Check in <i>common.php</i> that it is requiring `autoload.php` from the correct location
  - Check in <i>jq-fc.js</i> that the event source url's are pointing to the correct locations
-```
-This should then add a new calendar feed to your calendar.
+
