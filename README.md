@@ -47,3 +47,15 @@ The majority of the styling for this application is all done in <i>calendar.css<
 The list view contains event information for upcoming events. The number of events displayed is, by default, set to 3, but can be modified in <i>jq-fc.js</i>.
 
 By default, the list view does not display descriptions for the events, but can display them if description code in uncommented in <i>jq-fc.js</i>
+
+##Adding more calendars to the feed
+In order to display multiple calendars (within your personal Google account), you must add other calendars as feeds. Create a new php file with a sensible name for the calendar feed, then add the following to the file:
+  <code>
+  <?php
+  
+    $calendarId = 'INSERT YOUR CALENDAR ID';
+    
+    require 'pathway/to/common.php';
+    
+  ?>
+  </code>
