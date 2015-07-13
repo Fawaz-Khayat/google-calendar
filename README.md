@@ -2,7 +2,7 @@
 
  - [Installation](https://github.com/edprince/google-calendar/blob/master/README.md#installation)
  - [Usage](https://github.com/edprince/google-calendar/blob/master/README.md#usage)
- - [Styling](https://github.com/edprince/google-calendar/blob/master/README.md#styling)
+ - [Styling](https://github.com/edprince/google-calendar/blob/master/README.md#style)
  - [Adding more calendars](https://github.com/edprince/google-calendar/blob/master/README.md#add)
 
 ##<a name="installation"></a>Installation
