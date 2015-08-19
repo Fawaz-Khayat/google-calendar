@@ -1,6 +1,7 @@
 #Google Calendar
 
  - [Installation](https://github.com/edprince/google-calendar/blob/master/README.md#installation)
+ - [Setup Google Developer Console](https://github.com/edprince/google-calendar/blob/master/README.md#dev-console)
  - [Usage](https://github.com/edprince/google-calendar/blob/master/README.md#usage)
  - [Styling](https://github.com/edprince/google-calendar/blob/master/README.md#style)
  - [Adding more calendars](https://github.com/edprince/google-calendar/blob/master/README.md#add)
@@ -22,7 +23,7 @@ Navigate to your Google Calendar. Look down the left hand side, and click the dr
 Go to the calendar settings described in the previous paragraph, but stay on the <i>Calendar details</i>. Scroll down and you will find your calendarId (probably the email address of the google account).
 
 
-##Making the project Google Calendar-ready
+##<a name="dev-console"></a>Google Developer Console Setup
 **Step 1**
 Sign into your Google Account and go to the [Developer Console](https://console.developers.google.com). Create a new project (this may take a few seconds).
 ![Create Project](http://i.imgur.com/gtfLDLr.png)
