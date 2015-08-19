@@ -5,6 +5,8 @@ $(document).ready(function() {
 
 function main() {
   $('#add').click(function() {
+
+    UNIQUE = '';
     var id = $('.modal').attr('id');
     $.getJSON('gc/events.php', function(data) {
       display(data, id);

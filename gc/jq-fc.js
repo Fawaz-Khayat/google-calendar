@@ -77,25 +77,41 @@ $(document).ready(function() {
   }
 });
 
+function unixTimeStamp(x) {
+  return Date.parse(x); 
+}
+
 function displayList(category, data) {
     var upcoming = document.getElementById(category);
     var maxResults = 3;
+    var upcomingEvents = [];
+    //Make i the index of the first result that matches or succeeds the current date
+    data.forEach(function(i) {
+      console.log(i);
+      console.log((unixTimeStamp(i.start)), " - ", (unixTimeStamp(new Date().toJSON())));
+      if ((unixTimeStamp(i.start)) >= (Date.parse(new Date().toJSON()))) {
+        upcomingEvents.push(i);
+      }
+    });
+
+    console.log("UPCOMING EVENTS: ", upcomingEvents);
+
     for (var i = 0; i < maxResults; i++) {
       var li = document.createElement('li');
       var h3 = document.createElement('h3');
 
-      h3.appendChild(document.createTextNode(data[i].title));
+      h3.appendChild(document.createTextNode(upcomingEvents[i].title));
       h3.setAttribute('id', 'list-title');
       li.appendChild(h3);
       upcoming.appendChild(li);
 
-      var date = data[i].start;
-      var listEndDate = data[i].end;
+      var date = upcomingEvents[i].start;
+      var listEndDate = upcomingEvents[i].end;
       console.log(listEndDate, "end date");
       
 
       if (!date) {
-        date = data[i].start;
+        date = upcomingEvents.start;
       }
       date = moment(date).format('MMMM Do YYYY, h:mm:ss a');
 
@@ -126,7 +142,6 @@ function displayList(category, data) {
 
 function closeModal(e) {
     e.stopPropagation(); 
-
     $('#add').css('background-color', '#EDEDED');
     $('#button-text').css('color', 'black');
     $('#button-text').text(' Add to your calendar');

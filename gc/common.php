@@ -16,8 +16,11 @@ $cal = new Google_Service_Calendar($client);
 
 $params = array(
     'singleEvents' => true, 
-    'orderBy' => 'startTime',
-    'timeMin' => date(DateTime::ATOM)  
+    'orderBy' => 'startTime'
+
+    //Ordering from timemin prevents the calendar from displaying any previous events
+    //'orderBy' => 'startTime',
+    //'timeMin' => date(DateTime::ATOM)  
 );
 
 $events = $cal->events->listEvents($calendarId, $params); 
@@ -43,6 +46,7 @@ foreach ($events->getItems() as $event) {
       "title" => $event->summary,
       "description" => $event->description,
       "id" => $event->id,
+      "location" => $event->location,
       "start" => $date,
       "end" => $endDate
     );
