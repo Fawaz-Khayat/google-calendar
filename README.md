@@ -90,8 +90,14 @@ The list view contains event information for upcoming events. The number of even
 
 By default, the list view does not display descriptions for the events, but can display them if description code in uncommented in <i>jq-fc.js</i>
 
+###Colouring the calendar
+The calendar does <b>not</b> use the colours given to the events on the Google Calendar. Therefore, instead you will need to change the colour for the event source (i.e events.php -> Blue, sports.php -> Green). This can be done in <i>jq-fc.js</i>. The sports source is being coloured, this technique can be applied to as many sources as you would like.
+
+###Fullcalendar styles
+The fullcalendar module has its own stylesheet, <i>fullcalendar.css</i>, and events in there can be modified, or alternatively (as long as your stylesheet reference lies below the fullcalendar stylesheet reference), you can simply add rules in your own stylesheet to override those being provided by the fullcalendar stylesheet.
+
 ##<a name="add"></a>Adding more calendars to the feed
-This feature requires you to create a new calendar for other categories of events. Not separate from your primary calendar, but a secondary calendar. Then, when you create an event, use the drop down box to select the calendar on which to post the event.
+This feature requires you to create a new Google Calendar for other categories of events. Not an entirely new primary calendar, but a secondary calendar. Then, when you create an event, use the drop down box to select the calendar on which to post the event.
 In order to display multiple calendars (within your personal Google account), you must add other calendars as feeds. Create a new php file with a sensible name for the calendar feed, then add the following to the file:
 
   ```php
