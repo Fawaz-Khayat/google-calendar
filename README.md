@@ -20,8 +20,8 @@ Navigate to your Google Calendar. Look down the left hand side, and click the dr
 
 ###Retrieving your calendarId
 Go to the calendar settings described in the previous paragraph, but stay on the <i>Calendar details</i>. Scroll down and you will find your calendarId (probably the email address of the google account).
-#Wellacre School Website
-[Instructions](https://github.com/edprince/google-calendar) on usage for the Google Calendar module
+
+
 ##Making the project Google Calendar-ready
 **Step 1**
 Sign into your Google Account and go to the [Developer Console](https://console.developers.google.com). Create a new project (this may take a few seconds).
@@ -57,9 +57,6 @@ Under the 'Authorized Redirect URI's' heading, type the domain again, but add '/
 
 **Step 7**
 Now you need to add your **client id** and **API Key** to the code. Within the folder *gc/* in the google calendar folder, change the key in 'developer_key.php' to your **API Key**. Then go to 'add.js', and change the CLIENT_ID on line 70 to your **client ID**.
-
-###Creating an API key
-Logged into your Google Account, go to the [Google Developers Console](https://console.developers.google.com/project). Then create a new project. Click on your project once it has been created, and go to <i>Apis & auth</i>. Select <i>APIs</i> and enable the Google Calendar API. Then go to credentials and click on the <i>Create new key</i> button under Public API access. Click <i>Server key</i>. Leave the box blank and click <i>Create</i>. Now it will display your API key.
 
 ###Fullcalendar
 Everything that is needed for the fullcalendar is in this repository to and will work on downloading, however you can pick it up independently at the fullcalendar [website](http://fullcalendar.io/).
