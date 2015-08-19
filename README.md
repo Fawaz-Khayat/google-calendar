@@ -1,12 +1,13 @@
 #Google Calendar
 
- - [Installation](https://github.com/edprince/google-calendar/blob/master/README.md#installation)
+ - [Initial setup](https://github.com/edprince/google-calendar/blob/master/README.md#initial)
  - [Setup Google Developer Console](https://github.com/edprince/google-calendar/blob/master/README.md#dev-console)
+ - [Installation](https://github.com/edprince/google-calendar/blob/master/README.md#installation)
  - [Usage](https://github.com/edprince/google-calendar/blob/master/README.md#usage)
  - [Styling](https://github.com/edprince/google-calendar/blob/master/README.md#style)
  - [Adding more calendars](https://github.com/edprince/google-calendar/blob/master/README.md#add)
 
-##<a name="installation"></a>Installation
+##<a name="initial"></a>Initial Setup
 ###Requirements
  * A <b>Public</b> Google Calendar
  * Your calendarId
@@ -59,6 +60,7 @@ Under the 'Authorized Redirect URI's' heading, type the domain again, but add '/
 **Step 7**
 Now you need to add your **client id** and **API Key** to the code. Within the folder *gc/* in the google calendar folder, change the key in 'developer_key.php' to your **API Key**. Then go to 'add.js', and change the CLIENT_ID on line 70 to your **client ID**.
 
+##<a name="installation"></a>Installation
 ###Fullcalendar
 Everything that is needed for the fullcalendar is in this repository to and will work on downloading, however you can pick it up independently at the fullcalendar [website](http://fullcalendar.io/).
 
