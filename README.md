@@ -109,17 +109,45 @@ In order to display multiple calendars (within your personal Google account), yo
 Now go to the <i>jq-fc.js</i> file and add the new file you have created as an event source. The existing event source(s) should look something like this: 
 
 ```javascript
+var src1 = 'events.php';
+var src2 = 'sports.php';
+```
+
+To add a new source, just add:
+
+```javascript
+var src1 = 'events.php';
+var src2 = 'sports.php';
+var src3 = 'new-source.php';
+```
+
+Then add your new source as follows:
+
+```javascript
 eventSource: [
   {
-    url: 'events.php'
+    url: `gc/` + src1
   },
   {
-    url 'new-feed.php',
-    color: 'red' //OPTIONAL. This adds a colour to the events to distinguish from which feed it is
+    url: `gc/` + src2,
+    color: 'green'
+  },
+  {
+    url: `gc/` + src3,
+    color: 'red' //Here is a new feed
   }
 ]
 ```
 This should then add a new calendar feed to your calendar.
+To make sure the events display in the list as well, you will need to copy this: 
+
+```javascript
+//Copy one of these blocks and add src3 if created
+  $.getJSON('gc/' + src1, function(data) {
+    displayList('events', data);
+  });
+```
+and paste it with the other similar block, and modify 'src1' to 'src3'.
 ##Errors
 If you are getting errors when using this project, here are a few things to check.
  - Check that everything in the head of the html is linked to the correct place (bearing in mind the location of each file).
