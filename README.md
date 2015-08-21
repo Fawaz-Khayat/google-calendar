@@ -62,7 +62,7 @@ Now you need to add your **client id** and **API Key** to the code. Within the f
 
 ##<a name="installation"></a>Installation
 ###Fullcalendar
-Everything that is needed for the fullcalendar is in this repository to and will work on downloading, however you can pick it up independently at the fullcalendar [website](http://fullcalendar.io/).
+Everything that is needed for the fullcalendar is in this repository, however you can pick it up independently at the fullcalendar [website](http://fullcalendar.io/).
 
 ###PHP JSON extension
 Look for the install instructions for whichever OS the server is running.
