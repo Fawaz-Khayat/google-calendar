@@ -1,5 +1,7 @@
 #Google Calendar
 
+ 
+ - [Overview](https://github.com/edprince/google-calendar/blob/master/README.md#overview)
  - [Initial setup](https://github.com/edprince/google-calendar/blob/master/README.md#initial)
  - [Setup Google Developer Console](https://github.com/edprince/google-calendar/blob/master/README.md#dev-console)
  - [Installation](https://github.com/edprince/google-calendar/blob/master/README.md#installation)
@@ -7,7 +9,7 @@
  - [Styling](https://github.com/edprince/google-calendar/blob/master/README.md#style)
  - [Adding more calendars](https://github.com/edprince/google-calendar/blob/master/README.md#add)
 
-## Overview
+## <a name='overview'></a>Overview
 This application is split into two main components. Firstly the back-end, in which the events for the calendar are retrieved. Secondly, the front end, which handles the styling, and populating the calendar with the retrieved events.
 
 The front-end component does not require the back-end to work. This back-end is currently set up to work with a Google Calendar. As long as the front end can reference a JSON containing the correct fields, then the calendar will be capable of being populated.
