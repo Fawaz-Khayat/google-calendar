@@ -7,6 +7,11 @@
  - [Styling](https://github.com/edprince/google-calendar/blob/master/README.md#style)
  - [Adding more calendars](https://github.com/edprince/google-calendar/blob/master/README.md#add)
 
+## Overview
+This application is split into two main components. Firstly the back-end, in which the events for the calendar are retrieved. Secondly, the front end, which handles the styling, and populating the calendar with the retrieved events.
+
+The front-end component does not require the back-end to work. This back-end is currently set up to work with a Google Calendar. As long as the front end can reference a JSON containing the correct fields, then the calendar will be capable of being populated.
+
 ##<a name="initial"></a>Initial Setup
 ###Requirements
  * A <b>Public</b> Google Calendar
@@ -15,7 +20,6 @@
  * The JQuery fullcalendar plugin
  * PHP JSON extension
  * Google API php client
-
 
 ###Making your Google Calendar public
 Navigate to your Google Calendar. Look down the left hand side, and click the drop down arrow next to the calendar you wish to use for this project. Click on <i>calendar settings</i>. Along the top, click <i>Share this calendar</i>. Then make sure that <i>Make this calendar public</i> is checked, and <i>Share only my free/busy information (Hide details)</i> is unchecked.
